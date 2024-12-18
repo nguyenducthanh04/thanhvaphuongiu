@@ -99,3 +99,21 @@
 .title-video {
   margin-bottom: 50px;
 }
+.form-password input {
+  width: 200px;
+  height: 20px;
+  outline: none;
+  padding: 5px;
+  border-radius: 10px;
+  border: none;
+}
+.form-password button {
+  height: 32px;
+  width: 80px;
+  cursor: pointer;
+  background: #fa57ef;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  margin-left: 5px;
+}

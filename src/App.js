@@ -1,4 +1,7 @@
 import logo from './logo.svg';
+import { useState } from 'react';
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import './App.css';
 import Anh from "../src/img/anh.jpg"
 import Em from "../src/img/emm.jpg"
@@ -11,6 +14,18 @@ import video5 from "../src/img/video5.mp4"
 
 
 function App() {
+  const [inputPassword, setInputPassword] = useState(""); 
+  const [isAuthenticated, setIsAuthenticated] = useState(false); 
+
+  const defaultPassword = "anhyeuphuong"; 
+  const handleCheckPassword = () => {
+    if (inputPassword === defaultPassword) {
+      setIsAuthenticated(true); 
+      toast.success("Xác thực thành công!");
+    } else {
+      toast.error("Mật khẩu không đúng!");
+    }
+  };
   const startDate = new Date("2024-09-17");
   const currentDate = new Date();
   const timeDiff = Math.abs(currentDate - startDate); 
@@ -326,89 +341,107 @@ function App() {
 ]
   return (
     <div className="App">
-      <header className="App-header">
-      <div class="scroll-text">
-          Đây là nơi lưu trữ những kỉ niệm của chúng mình ❤
-      </div>
-      </header>
-      <div className="App-body">
-        <div className="couple">
-          <h2>Đây Là Chúng Tớ</h2>
-          <div className="meandhoney">
-            <div className='me'>
-              <img src={Anh}></img>
-              <h3>Đây Là Tớ</h3>
-            </div>
-            <div className='heart'>
-              <img src={Heart}></img>
-            </div>
-            <div className='honey'>
-              <img src={Em}></img>
-              <h3>Đây Là Em</h3>
-            </div>
+      {
+        !isAuthenticated ? (
+          <div className='form-password'>
+          <h3>Nhập mật khẩu để truy cập:</h3>
+          <input
+            type="password"
+            placeholder="Nhập mật khẩu"
+            value={inputPassword}
+            onChange={(e) => setInputPassword(e.target.value)}
+          />
+          <button onClick={handleCheckPassword}>Xác nhận</button>
+        </div>
+        ) : (
+          <div>
+          <header className="App-header">
+           <div class="scroll-text">
+               Đây là nơi lưu trữ những kỉ niệm của chúng mình ❤
+           </div>
+           </header>
+           <div className="App-body">
+             <div className="couple">
+               <h2>Đây Là Chúng Tớ</h2>
+               <div className="meandhoney">
+                 <div className='me'>
+                   <img src={Anh}></img>
+                   <h3>Đây Là Tớ</h3>
+                 </div>
+                 <div className='heart'>
+                   <img src={Heart}></img>
+                 </div>
+                 <div className='honey'>
+                   <img src={Em}></img>
+                   <h3>Đây Là Em</h3>
+                 </div>
+               </div>
+             </div>
+             <div className='all-img'>
+               <div className='title-img-all'>
+                 <h2>Dưới đây là kỉ niệm của chúng tớ </h2>
+               </div>
+               {data?.map((dataItem) => (
+             <div className='item' key={dataItem.id}>
+                 <div className='content'>
+                   <p>{dataItem.content}</p>
+                   {dataItem?.images?.map((img) => (
+                     <img key={img.id} src={img.url}></img>
+                   ))}
+                 </div>
+             </div>
+               ))}
+              
+             </div>
+             <div className='videoo-em-iu'>
+             <div className='title-video'>
+               <h2>Khoảnh khắc của tụi tớ</h2>
+             </div>
+               <div className='all-video'>
+                 <div className='video-container'>
+                 <video controls width={"300px"} height={"300px"}>
+                   <source src={video1} type="video/mp4" />
+                   Trình duyệt của bạn không hỗ trợ video.
+                   </video>
+             </div>
+             <div className='space'></div>
+             <div className='video-container'>
+             <video controls width={"300px"} height={"300px"}>
+               <source src={video2} type="video/mp4" />
+               Trình duyệt của bạn không hỗ trợ video.
+             </video>
+             </div>
+             <div className='space'></div>
+             <div className='video-container'>
+             <video controls width={"300px"} height={"300px"}>
+               <source src={video3} type="video/mp4" />
+               Trình duyệt của bạn không hỗ trợ video.
+             </video>
+             </div>
+             <div className='space'></div>
+             <div className='video-container'>
+             <video controls width={"300px"} height={"300px"}>
+               <source src={video4} type="video/mp4" />
+               Trình duyệt của bạn không hỗ trợ video.
+             </video>
+             </div>
+             <div className='space'></div>
+             <div className='video-container'>
+             <video controls width={"300px"} height={"300px"}>
+               <source src={video5} type="video/mp4" />
+               Trình duyệt của bạn không hỗ trợ video.
+             </video>
+             </div>
+               </div>
+             </div>
+             <div className='xiang'>
+               <em>Anh mong em sẽ luôn đồng hành và ở bên anh mãi về sau bởi vì em biết đó anh rất trân trọng em cũng như mối quan hệ này của hai taaaa 🥰. Cũng mong rằng mỗi khi em bé buồn hay chán nản em bé có thể tâm sự cùng anh và vào lại đây để xem lại những kỉ niệm đẹp của đôi taa 🥰</em>
+             </div>
+           </div>
           </div>
-        </div>
-        <div className='all-img'>
-          <div className='title-img-all'>
-            <h2>Dưới đây là kỉ niệm của chúng tớ </h2>
-          </div>
-          {data?.map((dataItem) => (
-        <div className='item' key={dataItem.id}>
-            <div className='content'>
-              <p>{dataItem.content}</p>
-              {dataItem?.images?.map((img) => (
-                <img key={img.id} src={img.url}></img>
-              ))}
-            </div>
-        </div>
-          ))}
-         
-        </div>
-        <div className='videoo-em-iu'>
-        <div className='title-video'>
-          <h2>Khoảnh khắc của tụi tớ</h2>
-        </div>
-          <div className='all-video'>
-            <div className='video-container'>
-            <video controls width={"300px"} height={"300px"}>
-              <source src={video1} type="video/mp4" />
-              Trình duyệt của bạn không hỗ trợ video.
-              </video>
-        </div>
-        <div className='space'></div>
-        <div className='video-container'>
-        <video controls width={"300px"} height={"300px"}>
-          <source src={video2} type="video/mp4" />
-          Trình duyệt của bạn không hỗ trợ video.
-        </video>
-        </div>
-        <div className='space'></div>
-        <div className='video-container'>
-        <video controls width={"300px"} height={"300px"}>
-          <source src={video3} type="video/mp4" />
-          Trình duyệt của bạn không hỗ trợ video.
-        </video>
-        </div>
-        <div className='space'></div>
-        <div className='video-container'>
-        <video controls width={"300px"} height={"300px"}>
-          <source src={video4} type="video/mp4" />
-          Trình duyệt của bạn không hỗ trợ video.
-        </video>
-        </div>
-        <div className='space'></div>
-        <div className='video-container'>
-        <video controls width={"300px"} height={"300px"}>
-          <source src={video5} type="video/mp4" />
-          Trình duyệt của bạn không hỗ trợ video.
-        </video>
-        </div>
-          </div>
-        </div>
-        <div className='xiang'>
-          <em>Anh mong em sẽ luôn đồng hành và ở bên anh mãi về sau bởi vì em biết đó anh rất trân trọng em cũng như mối quan hệ này của hai taaaa 🥰. Cũng mong rằng mỗi khi em bé buồn hay chán nản em bé có thể tâm sự cùng anh và vào lại đây để xem lại những kỉ niệm đẹp của đôi taa 🥰</em>
-        </div>
-      </div>
+        )
+      }
+    <ToastContainer />
     </div>
   );
 }
