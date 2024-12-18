@@ -3,12 +3,20 @@ import './App.css';
 import Anh from "../src/img/anh.jpg"
 import Em from "../src/img/emm.jpg"
 import Heart from "../src/img/heart.png"
-import image1 from "../src/img/1.jpg"
-import image2 from "../src/img/2.jpg"
-import image3 from "../src/img/3.jpg"
-import image4 from "../src/img/4.jpg"
+import video1 from "../src/img/video1.mp4"
+import video2 from "../src/img/video2.mp4"
+import video3 from "../src/img/video3.mp4"
+import video4 from "../src/img/video4.mp4"
+import video5 from "../src/img/video5.mp4"
+
 
 function App() {
+  const startDate = new Date("2024-09-17");
+  const currentDate = new Date();
+  const timeDiff = Math.abs(currentDate - startDate); 
+  const dayCount = Math.ceil(timeDiff / (1000 * 60 * 60 * 24)); 
+  console.log("Yeu duoc", dayCount, "ngay");
+  
   const data = [
     {
     "url": "raw.githubusercontent.com",
@@ -126,10 +134,6 @@ function App() {
                 {
                   "url": "https://raw.githubusercontent.com/nguyenducthanh04/server-image/main/image/img10.jpg",
                   "id": "6"
-                },
-                {
-                  "url": "https://raw.githubusercontent.com/nguyenducthanh04/server-image/main/image/img11.jpg",
-                  "id": "7"
                 },
                 {
                   "url": "https://raw.githubusercontent.com/nguyenducthanh04/server-image/main/image/img12.jpg",
@@ -324,7 +328,7 @@ function App() {
     <div className="App">
       <header className="App-header">
       <div class="scroll-text">
-          Đây là website lưu trữ những kỉ niệm của chúng mình ❤
+          Đây là nơi lưu trữ những kỉ niệm của chúng mình ❤
       </div>
       </header>
       <div className="App-body">
@@ -360,8 +364,49 @@ function App() {
           ))}
          
         </div>
+        <div className='videoo-em-iu'>
+        <div className='title-video'>
+          <h2>Khoảnh khắc của tụi tớ</h2>
+        </div>
+          <div className='all-video'>
+            <div className='video-container'>
+            <video controls width={"300px"} height={"300px"}>
+              <source src={video1} type="video/mp4" />
+              Trình duyệt của bạn không hỗ trợ video.
+              </video>
+        </div>
+        <div className='space'></div>
+        <div className='video-container'>
+        <video controls width={"300px"} height={"300px"}>
+          <source src={video2} type="video/mp4" />
+          Trình duyệt của bạn không hỗ trợ video.
+        </video>
+        </div>
+        <div className='space'></div>
+        <div className='video-container'>
+        <video controls width={"300px"} height={"300px"}>
+          <source src={video3} type="video/mp4" />
+          Trình duyệt của bạn không hỗ trợ video.
+        </video>
+        </div>
+        <div className='space'></div>
+        <div className='video-container'>
+        <video controls width={"300px"} height={"300px"}>
+          <source src={video4} type="video/mp4" />
+          Trình duyệt của bạn không hỗ trợ video.
+        </video>
+        </div>
+        <div className='space'></div>
+        <div className='video-container'>
+        <video controls width={"300px"} height={"300px"}>
+          <source src={video5} type="video/mp4" />
+          Trình duyệt của bạn không hỗ trợ video.
+        </video>
+        </div>
+          </div>
+        </div>
         <div className='xiang'>
-          <em>Anh mong em sẽ luôn đồng hành và ở bên anh mãi về sau bởi vì em biết đó anh rất trân trọng em cũng như mối quan hệ này của hai taaaa 🥰. Cũng mong rằng mỗi khi em bé buồn hay chán nản em bé có thể tâm sự cùng anh và vào lại trang web này để xem lại những kỉ niệm đẹp của đôi taa 🥰</em>
+          <em>Anh mong em sẽ luôn đồng hành và ở bên anh mãi về sau bởi vì em biết đó anh rất trân trọng em cũng như mối quan hệ này của hai taaaa 🥰. Cũng mong rằng mỗi khi em bé buồn hay chán nản em bé có thể tâm sự cùng anh và vào lại đây để xem lại những kỉ niệm đẹp của đôi taa 🥰</em>
         </div>
       </div>
     </div>
