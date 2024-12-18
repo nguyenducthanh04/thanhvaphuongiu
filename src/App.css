@@ -51,6 +51,7 @@
 }
 .content p {
   font-size: 1.4rem;
+  padding: 10px;
 }
 .content img {
   width: 270px;

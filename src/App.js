@@ -361,7 +361,7 @@ function App() {
          
         </div>
         <div className='xiang'>
-          <em>Anh mong em sẽ luôn đồng hành và ở bên anh mãi về sau bởi vì em biết đó anh rất trân trọng em cũng như mối quan hệ này của hai taaaa 🥰</em>
+          <em>Anh mong em sẽ luôn đồng hành và ở bên anh mãi về sau bởi vì em biết đó anh rất trân trọng em cũng như mối quan hệ này của hai taaaa 🥰. Cũng mong rằng mỗi khi em bé buồn hay chán nản em bé có thể tâm sự cùng anh và vào lại trang web này để xem lại những kỉ niệm đẹp của đôi taa 🥰</em>
         </div>
       </div>
     </div>
