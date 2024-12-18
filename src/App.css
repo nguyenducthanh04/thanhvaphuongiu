@@ -1,0 +1,66 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #ffc4d5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  margin-top: 30px;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.couple h1 {
+  margin-bottom: 50px;
+}
+.App-body {
+  margin-top: 100px;
+}
+.meandhoney {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 480px) {
+ .meandhoney {
+  display: block;
+ }
+}
+.honey img,
+.me img {
+  width: 300px;
+  height: 400px;
+  border-radius: 20px;
+}
+.heart img {
+  width: 200px;
+  height: 200px;
+  margin: 0px 30px;
+}
+.all-img {
+  margin: 100px 0px;
+}
+.title-img-all {
+  margin-bottom: 50px;
+}
+.content p {
+  font-size: 1.4rem;
+}
+.content img {
+  width: 200px;
+  height: 300px;
+  border-radius: 20px;
+  padding: 10px;
+}
+.xiang {
+  margin: 50px;
+}
+.xiang em {
+  font-size: 1.4rem;
+}
