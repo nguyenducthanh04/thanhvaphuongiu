@@ -117,3 +117,20 @@
   border-radius: 10px;
   margin-left: 5px;
 }
+
+
+
+
+.heart img {
+  width: 200px; /* Kích thước ban đầu */
+  animation: heartbeat 1s infinite; /* Hiệu ứng nhịp đập */
+}
+
+@keyframes heartbeat {
+  0%, 100% {
+    transform: scale(1); /* Kích thước ban đầu */
+  }
+  50% {
+    transform: scale(1.2); /* Phồng lên */
+  }
+}

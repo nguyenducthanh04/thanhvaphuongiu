@@ -284,7 +284,12 @@ function App() {
                 },  {
                   "url": "https://raw.githubusercontent.com/nguyenducthanh04/server-image/main/image/img57.jpg",
                   "id": "46"
-                },  {
+                }, 
+                {
+                  "url": "https://raw.githubusercontent.com/nguyenducthanh04/server-image/main/image/img86.jpg",
+                  "id": "46"
+                },
+                 {
                   "url": "https://raw.githubusercontent.com/nguyenducthanh04/server-image/main/image/img58.jpg",
                   "id": "47"
                 },  {
@@ -369,6 +374,7 @@ function App() {
                    <h3>Đây Là Tớ</h3>
                  </div>
                  <div className='heart'>
+                  <p>{dayCount} ngày</p>
                    <img src={Heart}></img>
                  </div>
                  <div className='honey'>
