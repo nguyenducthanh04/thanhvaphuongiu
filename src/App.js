@@ -153,10 +153,7 @@ function App() {
                 {
                   "url": "https://raw.githubusercontent.com/nguyenducthanh04/server-image/main/image/img12.jpg",
                   "id": "8"
-                },  {
-                  "url": "https://raw.githubusercontent.com/nguyenducthanh04/server-image/main/image/img13.jpg",
-                  "id": "9"
-                },  {
+                },   {
                   "url": "https://raw.githubusercontent.com/nguyenducthanh04/server-image/main/image/img14.jpg",
                   "id": "10"
                 },  {
@@ -278,10 +275,7 @@ function App() {
                 },  {
                   "url": "https://raw.githubusercontent.com/nguyenducthanh04/server-image/main/image/img55.jpg",
                   "id": "44"
-                },  {
-                  "url": "https://raw.githubusercontent.com/nguyenducthanh04/server-image/main/image/img76.jpg",
-                  "id": "45"
-                },  {
+                },   {
                   "url": "https://raw.githubusercontent.com/nguyenducthanh04/server-image/main/image/img57.jpg",
                   "id": "46"
                 }, 
@@ -299,36 +293,12 @@ function App() {
                   "url": "https://raw.githubusercontent.com/nguyenducthanh04/server-image/main/image/img60.jpg",
                   "id": "49"
                 },  {
-                  "url": "https://raw.githubusercontent.com/nguyenducthanh04/server-image/main/image/img77.jpg",
-                  "id": "50"
-                },  {
-                  "url": "https://raw.githubusercontent.com/nguyenducthanh04/server-image/main/image/img78.jpg",
-                  "id": "51"
-                },  {
-                  "url": "https://raw.githubusercontent.com/nguyenducthanh04/server-image/main/image/img79.jpg",
-                  "id": "52"
-                },  {
-                  "url": "https://raw.githubusercontent.com/nguyenducthanh04/server-image/main/image/img80.jpg",
-                  "id": "53"
-                },  {
-                  "url": "https://raw.githubusercontent.com/nguyenducthanh04/server-image/main/image/img81.jpg",
-                  "id": "54"
-                },  {
-                  "url": "https://raw.githubusercontent.com/nguyenducthanh04/server-image/main/image/img82.jpg",
-                  "id": "55"
-                },  {
-                  "url": "https://raw.githubusercontent.com/nguyenducthanh04/server-image/main/image/img83.jpg",
-                  "id": "56"
-                },  {
                   "url": "https://raw.githubusercontent.com/nguyenducthanh04/server-image/main/image/img68.jpg",
                   "id": "57"
                 },  {
                   "url": "https://raw.githubusercontent.com/nguyenducthanh04/server-image/main/image/img70.jpg",
                   "id": "59"
-                },  {
-                  "url": "https://raw.githubusercontent.com/nguyenducthanh04/server-image/main/image/img84.jpg",
-                  "id": "60"
-                },  {
+                },   {
                   "url": "https://raw.githubusercontent.com/nguyenducthanh04/server-image/main/image/img72.jpg",
                   "id": "61"
                 },  {
@@ -341,9 +311,106 @@ function App() {
                   "url": "https://raw.githubusercontent.com/nguyenducthanh04/server-image/main/image/img75.jpg",
                   "id": "64"
                 },
+                {
+                  "url": "https://raw.githubusercontent.com/nguyenducthanh04/server-image/main/image/img96.jpg",
+                  "id": "65"
+                },
+                {
+                  "url": "https://raw.githubusercontent.com/nguyenducthanh04/server-image/main/image/img97.jpg",
+                  "id": "1"
+                },{
+                  "url": "https://raw.githubusercontent.com/nguyenducthanh04/server-image/main/image/img98.jpg",
+                  "id": "1"
+                },
+                {
+                  "url": "https://raw.githubusercontent.com/nguyenducthanh04/server-image/main/image/img99.jpg",
+                  "id": "1"
+                },
               ]
             },
 ]
+ const data2 = [
+  {
+    "url": "raw.githubusercontent.com",
+    "id": 6,
+    "content": "Đây nữa nè",
+      "images": [
+        {
+          "url": "https://raw.githubusercontent.com/nguyenducthanh04/server-image/main/image/img87.jpg",
+          "id": "1"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/nguyenducthanh04/server-image/main/image/img88.jpg",
+          "id": "1"
+        },{
+          "url": "https://raw.githubusercontent.com/nguyenducthanh04/server-image/main/image/img89.jpg",
+          "id": "1"
+        },{
+          "url": "https://raw.githubusercontent.com/nguyenducthanh04/server-image/main/image/img90.jpg",
+          "id": "1"
+        },{
+          "url": "https://raw.githubusercontent.com/nguyenducthanh04/server-image/main/image/img91.jpg",
+          "id": "1"
+        },{
+          "url": "https://raw.githubusercontent.com/nguyenducthanh04/server-image/main/image/img92.jpg",
+          "id": "1"
+        },{
+          "url": "https://raw.githubusercontent.com/nguyenducthanh04/server-image/main/image/img93.jpg",
+          "id": "1"
+        },{
+          "url": "https://raw.githubusercontent.com/nguyenducthanh04/server-image/main/image/img94.jpg",
+          "id": "1"
+        },{
+          "url": "https://raw.githubusercontent.com/nguyenducthanh04/server-image/main/image/img95.jpg",
+          "id": "1"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/nguyenducthanh04/server-image/main/image/img100.jpg",
+          "id": "1"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/nguyenducthanh04/server-image/main/image/img101.jpg",
+          "id": "1"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/nguyenducthanh04/server-image/main/image/img102.jpg",
+          "id": "1"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/nguyenducthanh04/server-image/main/image/img103.jpg",
+          "id": "1"
+        }, {
+          "url": "https://raw.githubusercontent.com/nguyenducthanh04/server-image/main/image/img104.jpg",
+          "id": "1"
+        }, {
+          "url": "https://raw.githubusercontent.com/nguyenducthanh04/server-image/main/image/img105.jpg",
+          "id": "1"
+        }, {
+          "url": "https://raw.githubusercontent.com/nguyenducthanh04/server-image/main/image/img106.jpg",
+          "id": "1"
+        }, {
+          "url": "https://raw.githubusercontent.com/nguyenducthanh04/server-image/main/image/img107.jpg",
+          "id": "1"
+        }, {
+          "url": "https://raw.githubusercontent.com/nguyenducthanh04/server-image/main/image/img108.jpg",
+          "id": "1"
+        }, {
+          "url": "https://raw.githubusercontent.com/nguyenducthanh04/server-image/main/image/img109.jpg",
+          "id": "1"
+        }, {
+          "url": "https://raw.githubusercontent.com/nguyenducthanh04/server-image/main/image/img110.jpg",
+          "id": "1"
+        }, {
+          "url": "https://raw.githubusercontent.com/nguyenducthanh04/server-image/main/image/img111.jpg",
+          "id": "1"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/nguyenducthanh04/server-image/main/image/img112.jpg",
+          "id": "1"
+        },
+      ]
+    },
+ ]
   return (
     <div className="App">
       {
@@ -399,6 +466,16 @@ function App() {
                ))}
               
              </div>
+          {data2?.map((data2List) => (
+               <div className='emiu' key={data2List.id}>
+               <div className='emiu-content'>
+                 <p>{data2List.content}</p>
+                 {data2List?.images?.map((img) => (
+                    <img key={img.id} src={img.url}></img>
+                 ))}
+               </div>
+              </div>
+          ))}
              <div className='videoo-em-iu'>
              <div className='title-video'>
                <h2>Khoảnh khắc của tụi tớ</h2>

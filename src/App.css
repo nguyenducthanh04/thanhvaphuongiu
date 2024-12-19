@@ -80,8 +80,15 @@
 .title-img-all {
   margin-bottom: 50px;
 }
+.emiu-content p,
 .content p {
   font-size: 1.4rem;
+  padding: 10px;
+}
+.emiu-content img {
+  width: 280px;
+  height: 280px;
+  border-radius: 20px;
   padding: 10px;
 }
 .content img {
@@ -97,6 +104,7 @@
   font-size: 1.4rem;
 }
 .title-video {
+  margin-top: 150px;
   margin-bottom: 50px;
 }
 .form-password input {
